@@ -1,6 +1,6 @@
 #![feature(asm)]
 
-use std::ops::Add;
+// use std::ops::Add;
 
 pub fn add(a: i32, b: i32) -> i32 {
     let c: i32;
