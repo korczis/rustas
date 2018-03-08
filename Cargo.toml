@@ -1,0 +1,22 @@
+[package]
+name = "rustas"
+version = "0.1.0"
+authors = ["Tomas Korcak <korczis@gmail.com>"]
+
+[lib]
+crate-type = ["rlib", "dylib"]
+name = "rustas"
+path = "src/lib.rs"
+
+[[bin]]
+name = "rustas"
+doc = false
+path = "src/main.rs"
+
+[dependencies]
+clap = "2.26"
+env_logger = "0.4"
+futures = "0.1"
+log = "0.3"
+num_cpus = "1.7"
+rand = "0.3"
