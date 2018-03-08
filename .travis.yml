@@ -11,14 +11,15 @@ rust:
 #  - beta
   - nightly
 
-#matrix:
-#  allow_failures:
-#    - rust:
-#      - stable
-#      - beta
+matrix:
+  allow_failures:
+    - rust:
+      - stable
+      - beta
 
 language: rust
 script:
   - cargo install -f clippy
   - cargo build --verbose --all
   - cargo test --verbose --all
+  - cargo clippy
